@@ -1,9 +1,494 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+  "pages": [
+      {
+        "id": 1,
+        "name": "Inicio"
+      },
+      {
+        "id": 2,
+        "name": "Cadastro de Clientes"
+      },
+      {
+        "id": 3,
+        "name": "Cadastro de Forncedores"
+      },
+      {
+        "id": 4,
+        "name": "Compras"
+      },
+      {
+        "id": 5,
+        "name": "Emissão de nota fiscal"
+      },
+      {
+        "id": 6,
+        "name": "Pedidos de venda"
+      },
+      {
+        "id": 7,
+        "name": "Itens"
+      }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "suppliers": [
+    {
+      "id": 1,
+      "corporateReason": "Razão Social da Empresa",
+      "fantasyName": "Nome Fantasia da Empresa",
+      "cnpj": "12345678901234",
+      "stateRegistration": "123456789",
+      "address": "Rua Fictícia, 123",
+      "neighborhood": "Bairro Fictício",
+      "city": "Cidade Fictícia",
+      "state": "Estado Fictício",
+      "country": "País Fictício",
+      "cep": "12345-678",
+      "mailbox": "Caixa Postal 123",
+      "contato": "Nome do Contato",
+      "email01": "email1@empresa.com",
+      "email02": "email2@empresa.com",
+      "phone": "(00) 1234-5678",
+      "fax": "(00) 9876-5432",
+      "telex": "12345678",
+      "freight": "FOB - Rio de Janeiro, para faturamento supeior a R$ 1.500,00 - Frete posto São Paulo Capital",
+      "minimumBilling": "1000,00"
+    },
+    {
+      "id": 2,
+      "corporateReason": "Razão Social da Empresa",
+      "fantasyName": "Nome Fantasia da Empresa",
+      "cnpj": "11111111101234",
+      "stateRegistration": "123456789",
+      "address": "Rua Fictícia, 123",
+      "neighborhood": "Bairro Fictício",
+      "city": "Cidade Fictícia",
+      "state": "Estado Fictício",
+      "country": "País Fictício",
+      "cep": "12345-678",
+      "mailbox": "Caixa Postal 123",
+      "contato": "Nome do Contato",
+      "email01": "email1@empresa.com",
+      "email02": "email2@empresa.com",
+      "phone": "(00) 1234-5678",
+      "fax": "(00) 9876-5432",
+      "telex": "12345678",
+      "freight": "FOB - Rio de Janeiro, para faturamento supeior a R$ 1.500,00 - Frete posto São Paulo Capital",
+      "minimumBilling": "1000,00"
+    },
+    {
+      "id": 3,
+      "corporateReason": "Razão Social da Empresa",
+      "fantasyName": "Nome Fantasia da Empresa",
+      "cnpj": "12345678901234",
+      "stateRegistration": "123456789",
+      "address": "Rua Fictícia, 123",
+      "neighborhood": "Bairro Fictício",
+      "city": "Cidade Fictícia",
+      "state": "Estado Fictício",
+      "country": "País Fictício",
+      "cep": "12345-678",
+      "mailbox": "Caixa Postal 123",
+      "contato": "Nome do Contato",
+      "email01": "email1@empresa.com",
+      "email02": "email2@empresa.com",
+      "phone": "(00) 1234-5678",
+      "fax": "(00) 9876-5432",
+      "telex": "12345678",
+      "freight": "FOB - Rio de Janeiro, para faturamento supeior a R$ 1.500,00 - Frete posto São Paulo Capital",
+      "minimumBilling": "1000,00"
+    }
+
   ],
-  "profile": { "name": "typicode" }
-}
+  "terminal": [{ "term": "json-server --watch db.json --port 3333"}],
+  "table": [
+      {
+        "campo": "C",
+        "id": "VF2004444",
+        "data_emissao": "07/05/20",
+        "data_vencimento": "06/07/20",
+        "valor": "2.130,48",
+        "name": "GERDAU MG OURO PRETO",
+        "campo1": "1",
+        "campo2": "1",
+        "data_pagamento": "06/07/20"
+      },
+      {
+        "campo": "C",
+        "id": "VF2004445",
+        "data_emissao": "08/05/20",
+        "data_vencimento": "07/07/20",
+        "valor": "1.500,00",
+        "name": "Exemplo 1",
+        "campo1": "2",
+        "campo2": "3",
+        "data_pagamento": "07/07/20"
+      },
+      {
+        "campo": "C",
+        "id": "VF2004446",
+        "data_emissao": "09/05/20",
+        "data_vencimento": "08/07/20",
+        "valor": "3.000,00",
+        "name": "Exemplo 2",
+        "campo1": "3",
+        "campo2": "5",
+        "data_pagamento": "08/07/20"
+      },
+      {
+        "campo": "C",
+        "id": "VF2004447",
+        "data_emissao": "10/05/20",
+        "data_vencimento": "09/07/20",
+        "valor": "2.700,00",
+        "name": "Exemplo 3",
+        "campo1": "4",
+        "campo2": "7",
+        "data_pagamento": "09/07/20"
+      },
+      {
+        "campo": "C",
+        "id": "VF2004448",
+        "data_emissao": "11/05/20",
+        "data_vencimento": "10/07/20",
+        "valor": "1.800,00",
+        "name": "Exemplo 4",
+        "campo1": "5",
+        "campo2": "9",
+        "data_pagamento": "10/07/20"
+      },
+      {
+        "campo": "C",
+        "id": "VF2004449",
+        "data_emissao": "12/05/20",
+        "data_vencimento": "11/07/20",
+        "valor": "2.000,00",
+        "name": "Exemplo 5",
+        "campo1": "6",
+        "campo2": "11",
+        "data_pagamento": "11/07/20"
+      },
+      {
+        "campo": "C",
+        "id": "VF2004450",
+        "data_emissao": "13/05/20",
+        "data_vencimento": "12/07/20",
+        "valor": "2.500,00",
+        "name": "Exemplo 6",
+        "campo1": "7",
+        "campo2": "13",
+        "data_pagamento": "12/07/20"
+      },
+      {
+        "campo": "C",
+        "id": "VF2004451",
+        "data_emissao": "14/05/20",
+        "data_vencimento": "13/07/20",
+        "valor": "3.200,00",
+        "name": "Exemplo 7",
+        "campo1": "8",
+        "campo2": "15",
+        "data_pagamento": "13/07/20"
+      },
+      {
+        "campo": "C",
+        "id": "VF2004452",
+        "data_emissao": "15/05/20",
+        "data_vencimento": "14/07/20",
+        "valor": "1.700,00",
+        "name": "Exemplo 8",
+        "campo1": "9",
+        "campo2": "17",
+        "data_pagamento": "14/07/20"
+      },
+      {
+        "campo": "C",
+        "id": "VF2004453",
+        "data_emissao": "16/05/20",
+        "data_vencimento": "15/07/20",
+        "valor": "2.900,00",
+        "name": "Exemplo 9",
+        "campo1": "10",
+        "campo2": "19",
+        "data_pagamento": "15/07/20"
+      },
+      {
+        "campo": "C",
+        "id": "VF2004445",
+        "data_emissao": "08/05/20",
+        "data_vencimento": "07/07/20",
+        "valor": "1.500,00",
+        "name": "Exemplo 1",
+        "campo1": "2",
+        "campo2": "3",
+        "data_pagamento": "07/07/20"
+      },
+      {
+        "campo": "C",
+        "id": "VF2004446",
+        "data_emissao": "09/05/20",
+        "data_vencimento": "08/07/20",
+        "valor": "3.000,00",
+        "name": "Exemplo 2",
+        "campo1": "3",
+        "campo2": "5",
+        "data_pagamento": "08/07/20"
+      },
+      {
+        "campo": "C",
+        "id": "VF2004447",
+        "data_emissao": "10/05/20",
+        "data_vencimento": "09/07/20",
+        "valor": "2.700,00",
+        "name": "Exemplo 3",
+        "campo1": "4",
+        "campo2": "7",
+        "data_pagamento": "09/07/20"
+      },
+      {
+        "campo": "C",
+        "id": "VF2004448",
+        "data_emissao": "11/05/20",
+        "data_vencimento": "10/07/20",
+        "valor": "1.800,00",
+        "name": "Exemplo 4",
+        "campo1": "5",
+        "campo2": "9",
+        "data_pagamento": "10/07/20"
+      },
+      {
+        "campo": "C",
+        "id": "VF2004449",
+        "data_emissao": "12/05/20",
+        "data_vencimento": "11/07/20",
+        "valor": "2.000,00",
+        "name": "Exemplo 5",
+        "campo1": "6",
+        "campo2": "11",
+        "data_pagamento": "11/07/20"
+      },
+      {
+        "campo": "C",
+        "id": "VF2004450",
+        "data_emissao": "13/05/20",
+        "data_vencimento": "12/07/20",
+        "valor": "2.500,00",
+        "name": "Exemplo 6",
+        "campo1": "7",
+        "campo2": "13",
+        "data_pagamento": "12/07/20"
+      },
+      {
+        "campo": "C",
+        "id": "VF2004451",
+        "data_emissao": "14/05/20",
+        "data_vencimento": "13/07/20",
+        "valor": "3.200,00",
+        "name": "Exemplo 7",
+        "campo1": "8",
+        "campo2": "15",
+        "data_pagamento": "13/07/20"
+      },
+      {
+        "campo": "C",
+        "id": "VF2004452",
+        "data_emissao": "15/05/20",
+        "data_vencimento": "14/07/20",
+        "valor": "1.700,00",
+        "name": "Exemplo 8",
+        "campo1": "9",
+        "campo2": "17",
+        "data_pagamento": "14/07/20"
+      },
+      {
+        "campo": "C",
+        "id": "VF2004453",
+        "data_emissao": "16/05/20",
+        "data_vencimento": "15/07/20",
+        "valor": "2.900,00",
+        "name": "Exemplo 9",
+        "campo1": "10",
+        "campo2": "19",
+        "data_pagamento": "15/07/20"
+      }
+  ],
+  "totalgeral": [
+    {
+      "id": 1,
+      "ano": "2025" ,
+      "mes": "12",
+      "campo": "D",
+      "totalGeral": "R$ 30.000,00",
+      "totalPago": "R$ 30.000,00"
+    },
+    { 
+      "id": 2,
+      "ano": "2026" ,
+      "mes": "11",
+      "campo": "D",
+      "totalGeral": "R$ 30.000,00",
+      "totalPago": "R$ 30.000,00"
+    },
+    {
+      "id": 3,
+      "ano": "2026" ,
+      "mes": "12",
+      "campo": "D",
+      "totalGeral": "R$ 30.000,00",
+      "totalPago": "R$ 30.000,00"
+    },
+    {
+      "id": 4,
+      "ano": "2027" ,
+      "mes": "11",
+      "campo": "D",
+      "totalGeral": "R$ 30.000,00",
+      "totalPago": "R$ 30.000,00"
+    },
+    {
+      "id": 5,
+      "ano": "2027" ,
+      "mes": "12",
+      "campo": "D",
+      "totalGeral": "R$ 30.000,00",
+      "totalPago": "R$ 30.000,00"
+    },
+    {
+      "id": 6,
+      "ano": "2028" ,
+      "mes": "11",
+      "campo": "D",
+      "totalGeral": "R$ 30.000,00",
+      "totalPago": "R$ 30.000,00"
+    },
+    {
+      "id": 7,
+      "ano": "2027" ,
+      "mes": "12",
+      "campo": "D",
+      "totalGeral": "R$ 30.000,00",
+      "totalPago": "R$ 30.000,00"
+    },
+    {
+      "id": 8,
+      "ano": "2028" ,
+      "mes": "11",
+      "campo": "D",
+      "totalGeral": "R$ 30.000,00",
+      "totalPago": "R$ 30.000,00"
+    },
+    {
+      "id": 9,
+      "ano": "2027" ,
+      "mes": "12",
+      "campo": "D",
+      "totalGeral": "R$ 30.000,00",
+      "totalPago": "R$ 30.000,00"
+    },
+    {
+      "id": 10,
+      "ano": "2028" ,
+      "mes": "11",
+      "campo": "D",
+      "totalGeral": "R$ 30.000,00",
+      "totalPago": "R$ 30.000,00"
+    }
+
+  ],
+  "accountbalance": [
+    {
+      "id": 1,
+      "account": "1876999-8",
+      "balance": "R$ 500.000,00"
+    },
+    {
+      "id": 2,
+      "account": "2145-8",
+      "balance": "R$ 500.000,00"
+    },
+    {
+      "id": 3,
+      "account": "13005234-8",
+      "balance": "R$ 500.000,00"
+    },
+    {
+      "id": 4,
+      "account": "1876999-8",
+      "balance": "R$ 500.000,00"
+    },
+    {
+      "id": 5,
+      "account": "1876999-8",
+      "balance": "R$ 500.000,00"
+    },
+    {
+      "id": 6,
+      "account": "1876999-8",
+      "balance": "R$ 500.000,00"
+    },
+    {
+      "id": 7,
+      "account": "1876999-8",
+      "balance": "R$ 500.000,00"
+    },
+    {
+      "id": 8,
+      "account": "1876999-8",
+      "balance": "R$ 500.000,00"
+    },
+    {
+      "id": 9,
+      "account": "1876999-8",
+      "balance": "R$ 500.000,00"
+    },
+    {
+      "id": 10,
+      "account": "1876999-8",
+      "balance": "R$ 500.000,00"
+    },
+    {
+      "id": 11,
+      "account": "1876999-8",
+      "balance": "R$ 500.000,00"
+    }
+  ],
+  "shopping": [
+    {
+      "id": "007727",
+      "totalProducts": 939.12,
+      "deadline": 10,
+      "supplierName": "CARBOGRAFITE (RJ)",
+      "nf": 425397,
+      "condition": "28DDL",
+      "linkedAccount": "CARTEIRA",
+      "dolar": 1,
+      "otherExpenses": 0,
+      "shippingTransport": "FOB",
+      "dateShopping": "29/11/2022",
+      "ipi": 61.04,
+      "icms": 169.04,
+      "shipping": 50.06,
+      "emitionNF": "01/12/2022",
+      "description": "PROPOSTA: 148809 // NCM DA NF 38249989"
+    },
+    {
+      "id": "007728",
+      "totalProducts": 939.12,
+      "deadline": 10,
+      "supplierName": "We DESC",
+      "nf": 425397,
+      "condition": "28DDL",
+      "linkedAccount": "CARTEIRA",
+      "dolar": 1,
+      "otherExpenses": 0,
+      "shippingTransport": "FOB",
+      "dateShopping": "29/11/2022",
+      "ipi": 61.04,
+      "icms": 169.04,
+      "shipping": 50.06,
+      "emitionNF": "01/12/2022",
+      "description": "PROPOSTA: 111 // NCM DA NF 111111"
+
+    }
+]
+  }
+  
+
